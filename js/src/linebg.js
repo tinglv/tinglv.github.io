@@ -1,4 +1,4 @@
-$(document).ready(function(){
+!function(){
 			 
 			 /**方法返回指定属性名的属性值。*/
 			function n(n,e,t){
@@ -93,13 +93,9 @@ $(document).ready(function(){
 
 
 			var randomNum = Math.floor(Math.random()*3+1);
-			var bg = 'url(images/'+ randomNum +'.jpg)';
-
-			// Jquery设置背景图片
-			// $('body').css('background-image', bg);
-
-			// JavaScript设置背景图片
+			var bg = 'url(../../images/'+ randomNum +'.jpg)';
 			e('body')[0].style.backgroundImage = bg;
+			e('body')[0].style.backgroundRepeat = "no-repeat";
 
 			 
-});
+}();
