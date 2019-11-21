@@ -95,6 +95,7 @@
 			var randomNum = Math.floor(Math.random()*3+1);
 			var bg = 'url(../../images/'+ randomNum +'.jpg)';
 			e('body')[0].style.backgroundImage = bg;
+			e('body')[0].style.backgroundSize = "100% 100%";
 			e('body')[0].style.backgroundRepeat = "no-repeat";
 
 			 
